@@ -76,6 +76,9 @@ jobs:
           CONFIG_TARGET_IMAGES_GZIP=y
           CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
+          CONFIG_TARGET_ARCH_PACKAGES="arm_cortex-a15_neon-vfpv4"
+          CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe"
+          CONFIG_CPU_TYPE="cortex-a15+neon-vfpv4"
           EOF
 
           #
